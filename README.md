@@ -1,0 +1,2 @@
+# python_ejercicios
+EJERCICIOS/PROYECTOS DE PYTHON
