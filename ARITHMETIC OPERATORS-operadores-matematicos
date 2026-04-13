@@ -1,0 +1,1070 @@
+# SUMA Y RESTA ( + Y - )
+
+# HACER EJERCICIO CON SUMA PARA AUMENTAR LA DIFICULTAD SEGUN GOOGLE NIVEL BASICO 15 EJERCICIOS (EJERCICIOS Y PROFESOR COPOLIOT)
+
+# calculadora de IVA
+
+prod=[600.21,552.21,250.514,5586]
+
+
+# EN ESTE HUBO UN ERROR Y UN PEQUEÑO TRABO DE PASAR CONVERTIR EL NUMERO QUE NOS DAN A FLOTANTE PARA HACER LA OPERACION Y QUE NO SE CONVIERTA EN STRING
+#calculo=float(input("INGRESA EL PRECIO DEL PRODUCTO QUE DESEAS ; "))
+
+
+#operacion= calculo*1.21
+
+
+#print(f"EL NOMBRE DEL PRODUCTO QUE USTED ESCOGIO FUE : {calculo} + EL IVA DEL 20 AL FINAL PAGARA UN TOTAL DE {operacion}")
+
+
+#1. Nivel Básico: Calculadora Elemental MI PROPIA VERSION  ....
+
+#Suma: a + b
+#Resta: a - b
+#Multiplicación: a * b
+#División: a / b
+#División entera: a // b (solo la parte entera)
+#Módulo (resto): a % b (el sobrante de la división)
+#Potencia: a ** b () 
+
+#CREANDO LOS VALORES DE A Y B DE ACUERDO A UNA FORMULA QUE SIRVA SIMPRE CON DIFERENTES VALORES
+#a=float(input("INGRESE EL VALOR QUE LE DARA : "))
+
+#b=float(input("INGRESE EL VALOR QUE LE DARA : "))
+
+
+#Suma a + b 
+#suma= a+b
+#Resta: a - b
+#resta= a-b
+#Multiplicación: a * b
+#multi=a*b
+#División: a / b
+#div=a/b
+#Módulo (resto): a % b (el sobrante de la división)
+#modulo= a%b
+#Potencia: a ** b () 
+#potencia= a**b
+
+#print(f"LA SUMA DE LOS NUMEROS A + B  ES: {suma}, LA RESTA DE A - B ES: {resta}, LA MULTIPLICACION DE A*B ES : {multi}, LA DIVISION DE A/B ES: {div}, EL MODULO DE A%B ES: {modulo},LA POTENCIA DE A ** B ES: {potencia} ")
+
+
+#1. Nivel Básico: Calculadora Elemental VERSION HECHA CON COPILOT MEJORADA PARA APRENDER 
+
+# FORMA MEJORADA VERSION 1 
+
+# CALCULADORA ELEMENTAL
+
+#a= float(input("Ingrese el primer numero:"))
+#b= float(input("Ingrese el segundo numero: "))
+
+#print("Resultados: ")
+#print(f"Suma: {a + b}")
+#print(f"Resta: {a - b}")
+#print(f"Multiplicacion {a*b}")
+#print(f"Division: {a/b}")
+#print(f"Division entera: {a//b}")
+#print(f"Modulo: {a%b}")
+#print(f"Potencia: {a ** b}")
+
+#Ventajas: Más claro y ordenado.
+# Incluye división entera (//) que faltaba en tu versión.
+# Cada resultado se imprime en su propia línea → más legible.
+
+
+#Observación 1
+
+#Problema: Todo está en un solo bloque, sin funciones ni estructura.
+# Consejo: Empieza a usar funciones para organizar tu código. Ejemplo:
+
+# CREANDO UNA FUNCION ES INTERESANTE PRIMERO LE DAS UN NOMBRE Y LE DAS VALORES DENTRO DE LA FUNCION CALCULADORA SE LE DA LAS VARIABLES A Y B Y DESPUES SE HACEN LAS OPERACIONES 
+
+#def calculadora(a,b):
+    #print("Suma:", a+b)
+    #print("Resta:", a-b)
+    #print("Multiplicacion", a*b)
+    #print("Division:", a/b )
+    #print("Modulo:" ,a%b)
+    #print("Potencia:" ,a**b)
+
+#PROGRAMA PRINCIPAL 
+
+#x= float(input("Numero 1:"))
+#y= float(input("Numero 2: "))
+
+#calculadora(x, y)
+
+
+#1.Ejercicios sin resolver (Nivel Básico)
+#Tabla de multiplicar  
+#Haz un programa que pida un número y muestre su tabla de multiplicar del 1 al 10.
+
+
+#def tabla( a ):
+    #print(f"Tabla del 1 de {a} es:", a*1)
+    #print(f"Tabla del 2 de {a} es:", a*2)
+    #print(f"Tabla del 3 de {a} es:", a*3)
+    #print(f"Tabla del 4 de {a} es :", a*4)
+    #print(f"Tabla del 5 de {a} es:" , a*5)
+    #print(f"Tabla del 6 de {a} es:" , a*6 )
+    #print(f"Tabla del 7 de {a} es:" , a*7)
+    #print(f"Tabla del 8 de {a} es:", a*8)
+    #print(f"Tabla del 9 de {a} es:" , a*9)
+    #print(f"Tabla del 10 de {a} es:", a*10)
+
+#x=float(input("INGRESE EL NUMERO:"))
+#tabla(x)
+
+# Forma mejorada con ciclo (for)
+
+# Mi version funciona, pero es repetitiva segun la observacion de copilot
+
+#def tabla(a):
+    #for i in range(1, 11): # i va de 1 a 10
+        #print(f"{a} x {i} = {a*i}")
+
+#x= int(input("Ingrese un numero: "))
+#tabla(x)
+
+#Ventajas:Usas un ciclo for, que evita repetir 10 líneas de código.
+# range(1, 11) genera los números del 1 al 10.
+# Más limpio, más fácil de mantener.
+
+#Observación #1
+# Tu código está bien para empezar, pero:
+# Es muy repetitivo: 10 líneas que hacen lo mismo.
+#En programación, cuando ves repetición, piensa en ciclos o funciones.
+# Usar for te hace más eficiente y te prepara para problemas más grandes.
+
+
+#2.Promedio de notas  
+# Pide 3 calificaciones y calcula el promedio. Muestra si el estudiante aprobó (≥6) o reprobó.
+
+#def calificaciones (a,b,c):  #Defines una función llamada calificaciones que recibe tres parámetros (a, b, c).
+# Esto es correcto: encapsulas la lógica en una función reutilizable.
+
+        #promedio= (a+b+c)/3 Calculas el promedio sumando las tres calificaciones y dividiendo entre 3.
+        # El uso de paréntesis es fundamental: sin ellos, Python aplicaría primero la división y el resultado sería incorrecto.
+        
+        #if promedio>=6: Condición: si el promedio es mayor o igual a 6, el estudiante aprueba.
+        # Usas el operador correcto (>=), ya no el símbolo ≥ que te daba error.
+            #print("Usted esta aprobado")Mensaje claro si la condición se cumple.
+        #else: Caso contrario, si el promedio es menor que 6.
+            #print("Usted reprobo") Mensaje para el caso de reprobación.
+
+
+#x=float(input("Ingrese la primera calificacion:")) Pides al usuario la primera calificación y la conviertes a número decimal.
+# Lo mismo para y y z.
+#y=float(input("Ingrese la segunda calificacion: "))
+#z=float(input("Ingrese la tercera calificacion:"))
+
+#calificaciones(x,y,z)Llamas a la función con los tres valores ingresados.Correcto: ejecuta la lógica definida.
+
+# Forma mejorada mi codigo esta bien, pero se puede hacer mas flexible y legible
+
+#def calificaciones(notas):
+    #promedio=sum(notas)/len(notas) #sum() y len() hacen el calculo mas general
+    #if promedio>=6:
+        #print(f"Promedio:{promedio: .2f} → usted esta aprobado ")
+    #else:
+        #print(f"Promedio: {promedio:.2f} → usted esta reprobado")
+
+#Programa principal
+
+notas=[]
+#for i in range(3):
+    #nota=float(input(f"Ingrese la calificacion {i+1}: "))
+    #notas.append(nota)
+#calificaciones(notas)
+
+#Ventajas 
+# -Usas sum() y len(), lo que permite calcular el promedio de cualquier cantidad de notas, no solo 3. 
+# -El for evita repetir tres veces la misma linea de input 
+#- :.2f en el f-string muestra el promedio con dos decimales-> mas profesional, el codigo es mas escalable y limpio ( ES LO MAS RECOMENDABLE)
+
+#Observaciones como profesor de python segun copilot
+# -Mi version inicial es correcta y funcional , pero esta limitada a solo 3 notas 
+#-la version mejorada te prepara para casos mas generales (ejemplo: promedio de 5 a 10 calificaciones) 
+# -Consejo: Siempre que veas repeticion, piensa en listas y ciclos.Esto te hara mas eficiente y te acercara al nivel intermedio
+
+#Número par o impar  
+#Pide un número y determina si es par o impar usando el operador %.
+
+#def numeros(num): #Defines una función llamada numeros que recibe un parámetro num.
+#Correcto: encapsulas la lógica en una función reutilizable.
+    #if num%2==0: #% es el operador módulo: devuelve el resto de la división.
+#Si el resto de dividir num entre 2 es 0, significa que el número es par.
+        #print("El numero es par") #Mensaje si la condición se cumple.
+    #else:Caso contrario, si el número no es divisible entre 2.
+        #print("El numero es impar") Mensaje para el caso de impar.
+
+#x=num=float(input("Ingresa el numero: ")) Aquí tienes un detalle: estás asignando el mismo valor a x y num.
+
+#No es un error grave, pero es redundante. Basta con una sola variable.
+
+#Mejor usar: x = float(input("Ingresa el número: "))
+
+#numeros(x) Llamas a la función con el número ingresado.
+
+#Correcto: ejecuta la lógica definida.
+
+
+# Forma mejorada
+
+#def numeros(num):
+    #if num % 2 == 0:
+        #return "El numero es par"
+    #else:
+        #return "El numero es impar"
+
+# programa principal
+#x= int(input("Ingresa un numero: "))
+#print(numeros(x))
+
+#Ventajas:
+#La función ahora devuelve un resultado (return) en lugar de imprimir directamente.
+
+#Esto es más flexible: puedes usar el resultado en otros cálculos o imprimirlo después.
+
+#Usar int en lugar de float es más lógico aquí, porque par/impar solo aplica a enteros.
+
+#El código es más claro y evita variables duplicadas
+
+#Observación como profesor
+#Tu versión inicial es correcta y funcional, pero tiene redundancia (x = num = ...).
+
+#Consejo: usa return en funciones siempre que quieras que sean reutilizables.
+
+#Consejo extra: piensa en el tipo de dato que necesitas. Para par/impar, lo correcto es int, no float.
+
+
+
+
+
+
+# 4 Área de un triángulo  
+#Pide base y altura, calcula el área con la fórmula (base * altura) / 2.
+
+
+#def geometria(base,altura): #Defines una función llamada geometria que recibe dos parámetros: base y altura.
+    #Correcto: encapsulas la fórmula en una función reutilizable.
+
+    #area=base*altura/2  Calculas el área usando la fórmula matemática: Calculas el área usando la fórmula matemática: (base*altura)/2
+    #Bien escrito: Python respeta el orden de operaciones, primero multiplica y luego divide.
+    
+    #return area Devuelves el resultado en lugar de imprimirlo directamente.
+
+#Esto es más flexible: puedes usar el valor en otros cálculos o mostrarlo después.
+
+#x=float(input("Ingrese la base del triangulo: ")) Pides al usuario la base y la conviertes a número decimal.
+
+#Correcto: así puedes manejar valores con decimales.
+
+#y=float(input("Ingrese la altura del triangulo: ")) Lo mismo para la altura.
+
+#print("El area del triangulo es igual a: ",geometria(x,y)) Llamas a la función con los valores ingresados y muestras el resultado.
+
+#Correcto: el flujo está bien estructurado.
+
+# Forma mejorada
+#u código funciona, pero se puede hacer más robusto y legible:
+
+#def geometria(base,altura):
+    #if base  <= 0 or altura  <= 0:
+        #return "Error: la base y altura deben ser mayores que cero"
+    #area= (base*altura)/2
+    #return f"El area del triangulo es: {area:.2f}"
+
+#Programa principal
+
+#try:
+    #x=float(input("Ingrese la base del triangulo: "))
+    #y=float(input("Ingrese la altura del triangulo: "))
+    #print(geometria(x,y))
+#xcept ValueError:
+    #print("Error: debes ingresar numeros validos")
+
+
+#Ventajas 
+# Validacion de entrada: no permite valores negativos o cero.
+# Formato profesional: :.2f muestra el resultado con dos decimales Manejo de errores: si el usario escribe texto en lugar de numeros , el programa no se rompe. 
+#Mensajes claros: el usario entiende que esta mal si ingresa datos incorrectos.
+
+# OBSERVACION COMO PROFESOR
+#Tu version inicial es correcta y funcional, pero no valida entradas ni formatea el resultado
+#Consejo: Siempre que trabajes con  formulas matematicas, piensa en casos extremos (valores negativos, cero, texto). Esto te prepara para proyecto reales.
+#consejos extra: usar return en funciones es mejor que imprimir directamente , porque hace tu codigo mas reutilizable
+
+
+# 5-Conversor de temperatura  
+#Pide una temperatura en Celsius y conviértela a Fahrenheit con la fórmula F = C * 9/5 + 32.
+
+
+
+#def temperatura(celsius): #DIFINO LA FUNCION QUE RECIBE UN VALOR EN GRADOS CELSIUS.
+    # CORRECTO: ENCAPSULO LA LOGICA EN UNA FUNCION REUTILIZABLE
+    #if not (-30<=celsius<=100): #USO UN RANGO VALIDO PARA LA ENTRADA, LA EXPRESION -30<=celsius<=100 ES UNA COMPARACION ENCADENADA EN PYTHON , MUY ELEGANTE.
+        # EL NOT INVIERTE LA CONDICION: SI EL VALOR ESTA FUERA DEL RANGO, SE DEVUELVE UN ERROR.
+        #return f"Error el numero: {celsius} no es valido "
+    # MENSAJE CLARO PARA EL USUARIO SI EL VALOR NO CUMPLE LA CONDICION
+    # BIEN HECHO: USAS RETURN EN LUGAR PRINT , LO QUE HACE TU FUNCION MAS FLEXIBLE
+    #f=(celsius*9/5)+32 # FORMULA CORRECTA PARA CONVETIR CELSIUS A FAHRENHEIT
+    # USAS VARIABLES CLARAS Y OPERACIONES BIEN ORDENADAS
+    #return f"La conversion de: {celsius} grados celsius son {f} grados fahrenheit" # DEVUELVO EL RESULTADO CON UN MENSAJE COMPLETO
+# CORRECTO: EL USUARIO ENTIENDE QUE SE CALCULO
+
+#try: # INTENTAS EJECUTAR EL BLOQUE DE CODIGO. SI HAY UN ERROR, LO CAPTURAS
+    #Correcto: esto evita que el programa se rompa.
+    #x=int(input("Ingrese un numero en grados celcius: "))
+    #Pides al usuario un número y lo conviertes a entero.
+    #Bien hecho, aunque podrías usar float si quieres permitir decimales.
+    #print(temperatura(x)) #Llamas a la función y muestras el resultado.
+    #Correcto: flujo claro y ordenado.
+#except ValueError: #Capturas el error si el usuario escribe texto o algo inválido.
+    #Correcto: buena práctica de validación.
+    #print("Eror : debes ingresar numero validos")
+#Mensaje claro para el usuario.
+#Excelente: no se rompe el programa.
+
+
+#Forma mejorada tu version ya es muy buena.Aqui te muestro como podras pulirla aun mas:
+
+#def temperatura(celsius):
+    #if not (-30<=celsius<=100):
+        #return f"Error: {celsius} esta fuera del rango permitido (-30 a 100)"
+    #f=(celsius*9/5)+32
+    #return f"{celsius:.1f}°C equivalen a {f:1f}  °F "
+
+# PROGRAMA PRINCIPAL
+
+#try:
+    #x=float(input("Ingrese un numero en grados Celsius: "))
+    #print (temperatura(x))
+#except ValueError:
+    #print("Error: debes ingresar un numero valido")
+
+
+# VENTAJAS
+#Permite decimales (float), Formatea el resultado con un decimal (:.1f) → más profesional. , Mensajes más claros y específicos.
+
+#Observación como profesor, Tu código muestra que ya estás pensando como programador intermedio: validas entradas, manejas errores y das mensajes claros.,Consejo: siempre que trabajes con conversiones o fórmulas, piensa en casos extremos (valores fuera de rango, decimales, texto).,Consejo extra: formatear la salida con :.2f o :.1f da un toque profesional y evita resultados con demasiados decimales.
+
+
+#6-Tabla de multiplicar hasta N  
+#Haz que el usuario ingrese un número y también hasta qué número quiere la tabla (ejemplo: hasta el 20).
+
+#def tabla(Num,Multi): Defines una función llamada tabla que recibe dos parámetros: Num: el número cuya tabla quieres calcular,Multi: hasta dónde quieres llegar en la tabla.
+    #for i in range (1,Multi+1): Aquí usas un bucle for.,range(1, Multi) genera números desde 1 hasta Multi-1.,Observación: si el usuario ingresa 10, el ciclo llega solo hasta 9. Para incluir el 10, deberías usar range(1, Multi + 1).
+        #print( f"{Num} x {i} = {Num*i}")Imprime la multiplicación en formato claro.
+
+#Correcto: usas un f-string para mostrar tanto la operación como el resultado.
+
+#x=int(input("Ingrese el numero de la tabla  :")) Pides el número de la tabla y lo conviertes a entero,Correcto: tablas de multiplicar se trabajan con enteros.
+#y=int(input("Ingrese hasta donde quiere llegar en la tabla:")) Pides hasta dónde quieres llegar en la tabla,Correcto: también entero.
+
+
+
+#tabla(x,y)Llamas a la función con los valores ingresados.
+
+#Correcto: ejecuta la lógica definida.
+
+
+
+#Forma mejorada codigo funciona, pero se puede pulir
+
+#def tabla(num,limite):
+    #for i in range(1,limite+1): #INCLUYE LIMITE
+        #print(f"{num} x {i} = {num*1}")
+
+# Programa principal
+#try:
+    #x=int(input("Ingrese el numero de la tabla: "))
+    #y=int(input("Ingrese hasta donde quiere llegar en la tabla: "))
+    #tabla(x,y)
+#except ValueError:
+    #print("Error: debes ingresar numeros enteros validos")
+
+
+#Ventajas:
+#range(1, limite + 1) asegura que el ciclo llegue hasta el número que el usuario pidió.
+
+#Manejo de errores con try/except evita que el programa se rompa si el usuario escribe texto.
+
+#Nombres de variables más claros (num, limite).
+
+
+#Observación como profesor
+#Tu error inicial de que repetía el mismo resultado se debió a que estabas multiplicando por el número equivocado (no usabas el índice del ciclo).
+
+#El None que mencionaste aparece cuando una función imprime dentro de sí y luego la llamas con print(función()). En tu versión ya lo corregiste porque tu función solo imprime y no devuelve nada.
+
+#Consejo: cuando trabajes con bucles, piensa siempre en qué variable cambia en cada vuelta. Esa es la clave para que el ciclo tenga orden y secuencia.
+
+
+
+
+
+
+#7-Tablas del 1 al 10  
+#Haz un programa que muestre todas la tablas de multiplicar del 1 al 10 usando un ciclo anidado (for dentro de otro for).
+
+#def tablas (operacion):#Defines una función llamada tablas que recibe un parámetro operacion.,Observación: ese parámetro no se usa dentro de la función, por lo que es innecesario.
+    #for i in range (1,11):#Este es el bucle externo,i representa el número de la tabla (1, 2, 3… hasta 10).,Correcto: controla qué tabla se está imprimiendo.
+        #for j in range(1,11):#Este es el bucle interno.,j representa el multiplicador (1, 2, 3… hasta 10).,Correcto: controla hasta dónde llega cada tabla.
+            #print(f"{i} x {j} = {i*j}", end="\t")#Imprime la operación y el resultado.,El end="\t" hace que los resultados se impriman en la misma línea separados por tabulaciones.,Observación: falta un print() vacío al final del bucle interno para dar un salto de línea y separar cada tabla.
+#try:#Intentas capturar errores, pero en este caso no es necesario porque no hay conversión de datos que pueda fallar.
+    #x=tablas #Aquí asignas la función tablas a la variable x, pero no la estás llamando.,Error: deberías llamar la función directamente, no asignarla.
+    #tablas(x)#Llamas a la función pasando x, pero x es la función misma, no un valor,Esto no tiene sentido en este contexto
+#except ValueError:#Capturas un error de tipo ValueError, pero nunca se va a producir porque no hay conversión de texto a número,Es innecesario aquí.
+    #print("Error al hacer operaciones")
+
+# Forma mejorada
+
+#def tablas():
+    #for i in range(1,11): #Tablas del 1 al 10
+        #for j in range(1,11): #Multiplicadores del 1 al 10
+            #print(f"{i} x {j} = {i*j}", end= "\t") #Salto de linea al terminar cada tabla 
+        #print()
+#Programa principal
+#tablas()
+
+
+#Ventajas:
+# El parámetro innecesario se elimina.
+
+# El salto de línea (print()) organiza la salida, mostrando cada tabla en su propia fila.
+
+# El código es más claro y directo.
+
+
+# Observación como profesor
+# Tu error principal fue usar parámetros y try/except innecesarios.
+
+# Consejo: cuando veas que una función no necesita datos externos, no le pongas parámetros.
+
+# Consejo extra: en bucles anidados, siempre piensa en qué controla el externo (tablas) y qué controla el interno (multiplicadores).
+
+
+
+
+
+
+#8-Suma de números  
+#Pide un número n y calcula la suma de todos los números del 1 al n.
+
+#def suma (n): #Defines una función llamada suma que recibe un parámetro n,Correcto: encapsulas la lógica en una función.
+    #for i in range(1,11): #Aquí usas un bucle for que recorre del 1 al 10,Observación: el ejercicio pedía sumar los números del 1 al n, pero tu bucle está fijo en 10 y además imprime multiplicaciones, no sumas
+        #print(f"{n} x {i} = {n*i}", end="\t") #Estás imprimiendo una multiplicación (n * i) en lugar de acumular una suma,Esto corresponde más a una tabla de multiplicar, no a la suma de números.
+    #print()#Salto de línea al final del bucle. Correcto para organizar la salida
+
+#try:#Intentas capturar errores de entrada. Correcto: evita que el programa se rompa si el usuario escribe texto.
+    #x=int(input("Ingrese el numero "))#Pides un número entero. Correcto: la suma de números se hace con enteros.
+    #suma(x)#Llamas a la función con el número ingresado. Correcto en estructura, pero la lógica dentro de la función no corresponde al ejercicio.
+#except ValueError:#Capturas el error si el usuario ingresa algo inválido. Correcto.
+    #print("Ingrese un valor valido") #Mensaje claro para el usuario. Correcto.
+
+
+#Forma mejorada 
+#def suma(n):
+    #total=0
+    #for i in range(1, n+1): #recorre del 1 hasta n
+        #total +=1
+    #return total
+
+#try:
+    #x= int(input("Ingrese un numero: "))
+    #print(f"La suma de los numeros del 1 al {x} es: {suma(x)}")
+#except ValueError:
+    #print("Error: debes ingresar un numero valido")
+
+
+
+
+#Ventajas:
+#El bucle ahora depende de n, no está fijo en 10.
+
+#Usas total += i para acumular la suma.
+
+#Devuelves el resultado con return, más flexible que imprimir dentro de la función.
+
+#Mensajes claros y profesionales.
+
+#🔎 Observación como profesor
+#Tu error fue confundir la lógica de la suma con la lógica de la multiplicación.
+
+#Consejo: antes de programar, escribe en papel qué significa “suma de números del 1 al n”. Ejemplo: si n = 5, entonces la suma es 1 + 2 + 3 + 4 + 5 = 15.
+
+#Consejo extra: cuando un ejercicio pide “calcular”, piensa en acumular un resultado en una variable en lugar de imprimir cada paso.
+
+#9-Factorial  
+#Pide un número y calcula su factorial (ejemplo: 5! = 5 × 4 × 3 × 2 × 1).
+
+#def factorizar (n): # Defines una función que recibe un número n, Correcto: encapsulas la lógica en una función
+    #factores=[] # Creas una lista vacía para guardar los factores primos,Correcto: buena estructura
+    #divisor=2 #Empiezas con el primer número primo (2)
+    #while divisor * divisor <= n: # Correcto: optimiza el algoritmo, porque no necesitas probar divisores mayores.
+        #while n% divisor ==0: #Este segundo while divide repetidamente si el número es divisible por divisor,Correcto: así capturas factores repetidos (ejemplo: 12 = 2 × 2 × 3).
+            #factores.append(divisor)#Guardas el divisor en la lista de factores,Correcto.
+            #n//= divisor #Divides n entre el divisor y actualizas su valor,Correcto: reduces el número paso a paso
+        #divisor +=1 #Avanzas al siguiente posible divisor,Correcto
+    #if n>1: # Si al final queda un número mayor que 1, significa que es primo y debe agregarse,Correcto
+        #factores.append(n)
+    #return factores #Devuelves la lista de factores primos,Correcto
+
+#try: 
+    #x=float(input("Ingresa el numero el cual se factorizara: ")) #Error: la factorización en primos solo tiene sentido con enteros, no con decimales,Debes usar int en lugar de float.
+    #factorizar(x) #Llamas a factorizar(x) pero no imprimes el resultado.
+#Por eso parece que “no hace nada”.
+
+#Debes mostrar la lista devuelta.
+
+#except ValueError:
+    #print("Error debe de ingresar un un numero ")
+
+
+#Ventajas:
+#Usa int en lugar de float.
+
+#Imprime el resultado de la factorización.
+
+#Mensajes claros para el usuario.
+
+#🔎 Observación como profesor
+
+#Excelente que investigaste while en Google y lo aplicaste. Eso es justo lo que se hace en nivel intermedio: buscar, entender y adaptar.
+
+#Consejo: cada vez que uses while, piensa en qué condición lo detiene. Aquí fue divisor * divisor <= n. Esa lógica es clave para que no se vuelva infinito.
+
+#Consejo extra: siempre imprime o devuelve el resultado de tu función, para verificar que realmente está haciendo lo que esperas.
+
+
+
+
+
+
+#10-Contador de pares e impares  
+#Pide un número n y muestra cuántos números pares e impares hay entre 1 y n
+
+#def operacion(n):
+    #for i in range (1,n+1):
+            #total +=i
+    #if n %2 == 0:
+            #print("El numero que ingreso es par ")
+    #else:
+            #print ("El numero que ingreso es impar")
+    #total=0
+#try:
+    #x= int(input("Ingrese el numero: "))
+    #print(operacion(x))
+#except ValueError:
+    #print("Erro: debes ingresar un numero valido")
+
+#Problema detectados
+#Total esta mal colocado Lo inicializas al final de la función, cuando ya lo usaste, Debe inicializarse antes del bucle
+
+#Orden incorrecto de return
+#Pones return total antes de la parte que evalúa par/impar,Cuando Python llega al return, la función termina y nunca ejecuta lo que está después.
+#Confusión de lógica, Tu función mezcla dos tareas: calcular la suma y verificar par/impar,Es mejor separar esas responsabilidades o estructurarlas bien
+
+#Forma corregida y mejorada
+
+#def contador_pares_impares(n):
+    #pares=0
+    #impares=0
+    #for i in range (1, n + 1):
+        #if i % 2==0:
+            #pares+=1
+        #else:
+            #impares+=1
+    #return pares,impares
+
+#try:
+    #x= int(input("Ingrese un numero: "))
+    #pares,impares= contador_pares_impares(x)
+    #print(f"Entre 1 y {x} hay: ")
+    #print(f"{pares} numeros pares")
+    #print(f"{impares} numeros impares")
+#except ValueError:
+    #print("Error : debes ingresar un numero valido")
+
+
+
+#Explicación línea por línea
+
+#pares = 0 y impares = 0 → inicializas los contadores.
+
+#for i in range(1, n + 1): → recorres todos los números desde 1 hasta n.
+
+#if i % 2 == 0: → verificas si el número es par.
+
+#Si es par, incrementas pares.
+
+#Si no, incrementas impares.
+
+#return pares, impares → devuelves los dos resultados.
+
+#En el programa principal, desempaquetas los valores y los imprimes con mensajes claros.
+
+
+#✅ Observación como profesor
+#Tu error fue intentar aplicar la lógica de la suma directamente, pero aquí el objetivo es clasificar números en pares e impares, no acumularlos.
+
+#Consejo: cada vez que un ejercicio diga “contar”, piensa en inicializar un contador y sumarlo dentro del bucle.
+
+#Consejo extra: devolver varios valores con return es más limpio que imprimir dentro de la función, porque te permite reutilizar los resultados.
+
+
+
+
+#11-Pide la edad de una persona y muestra si es mayor de edad (≥18) o menor de edad.
+
+
+#def edades(edad):
+    #if edad<0:
+        #print("No existes por onde no es valido")
+    #elif 0<edad <= 11:
+        #en la primera infancia ")
+    #elif 12<= edad <= 18:
+        #print("Te comprendo eres un adolescente yo acabo de pasar de ahi, que bonito y feo al mismo tiempo")
+    # elif 18<= edad <=26:
+        #print(" ESTAS EN TU PRIME QUE DEBES DE APROVECHAR SI O SI TRABAJAR ")
+    #elif 27<= edad <=59:
+        #print ("YA ESTAS MADURITO SEGUN")
+    #elif 60<= edad <= 120:
+        #print("eres un viejo que seas optmista es importante muy pero muy viejito si tienes mas de 90 milagro")
+    #else:
+        #print("Estas muerto descansa en paz todos llegaremos algun dia ")
+
+#try:
+    #x=int(input("Ingresa la edad que tengas: "))
+    #edades(x)
+#except ValueError:
+    #print("Error debes de ingresar un valor valido")
+
+
+#🔎 Observación como profesor
+#Tu versión original estaba creativa pero desordenada (rangos solapados, mensajes largos).
+
+#La versión mínima es lo que pedía el examen.
+
+#La intermedia y avanzada son cómo un buen programador escala el problema: primero lo resuelve, luego lo mejora, y finalmente lo extiende.
+
+#Consejo: siempre empieza por lo mínimo, luego agrega mejoras. Así nunca pierdes el control del ejercicio.
+
+
+
+
+#12-Pide un número y muestra si es positivo, negativo o cero.
+
+
+#def muestra(num): #Defines la función que recibe un número. Correcto.
+    #if num==0:#Verifica si el número es cero. Correcto.
+        #print(" Tu numero es cero")
+    #elif num<0:#Verifica si el número es negativo. Correcto.
+        #print(" Tu numero es negativo")
+    #else:#Si no es cero ni negativo, entonces es positivo. Correcto.
+        #print(" Tu numero es positivo")
+
+#try: #Maneja errores de entrada. Correcto.
+    #entrada en entero. Correcto.
+    #muestra(x)#Llama a la función con el número ingresado. Correcto.
+#except ValueError:#Captura errores si el usuario escribe texto. Correcto.
+    #print("Error debe ingresar un numero valido")
+
+
+
+
+#13-Pide dos números y muestra cuál es el mayor o si son iguales.
+
+
+#def indentificar(n1,n2): #Defines la función que recibe dos números. Correcto, Observación: el nombre está mal escrito, debería ser identificar.
+    #if n1>n2: #Compara si el primero es mayor. Correcto.
+        #print(f"{n1} es mayor que {n2}")
+    #elif n1<n2: #Compara si el segundo es mayor. Correcto.
+        #print(f"{n2} es mayor que {n1}")
+    #else: #Si no es mayor ni menor, significa que son iguales. Correcto.
+        #print (f"Son iguales {n1} y {n2}")
+
+#try:
+    #x=int(input("Ingrese el segundo numero: ")) #Aquí el mensaje está mal: debería decir “primer número” para x y “segundo número” para y.
+
+#Error de presentación, no de lógica.
+    #y=int(input("Ingrese el segundo numero: "))
+    #indentificar(x,y) #Llamas a la función con los dos números. Correcto
+#except ValueError:
+    #print("Eror debe ingresar un numero valido") #Captura errores de entrada. Correcto.
+
+
+#Forma mejorada
+#def identificar(n1,n2):
+    #if n1>n2:
+        #return f"{n1} es mayor que {n2}"
+    #elif n1<n2:
+        #return f"{n2} es mayor que {n1}"
+    #else:
+        #return f"Son iguales: {n1} Y {n2}"
+
+#try:
+    #x=int(input("Ingrese el primer numero: "))
+    #y= int(input("Ingrese el segundo numero: "))
+    #print(identificar(x,y))
+#except ValueError:
+    #print("Error debes ingresar un numero valido")
+
+
+
+#Ventajas:
+#Corrige el nombre de la función (identificar).
+
+#Mensajes de entrada claros (“primer número” y “segundo número”).
+
+#La función devuelve el resultado en lugar de imprimirlo directamente → más profesional y reutilizable.
+
+#Mensajes consistentes y ordenados.
+
+#🔎 Observación como profesor
+#Tu versión original estaba bien en lógica, pero con errores de presentación (nombres y mensajes).
+
+#Consejo: siempre cuida los nombres de funciones y variables; deben ser claros y sin errores ortográficos.
+
+#Consejo extra: separar la lógica (con return) de la presentación (print) te da código más limpio y reutilizable.
+
+
+
+
+
+
+
+#14-Pide una calificación y muestra si es excelente (≥9), buena (≥7), regular (≥6) o reprobada (<6).
+
+#def calificaciones(n):
+    #if n>10:
+        #print("La calificacion se encuentra en el rango 1-10")
+    #elif n>= 9:
+        #return f"La calificacion {n} es excelente"
+    #elif n>=7:
+        #return f"La calificacion {n} es buena"
+    #elif n<6:
+        #return f"La calificacion {n} es reprobatoria "
+
+#try:
+    #x=int(input("Ingrese calificacion: "))
+    #print(calificaciones(x))
+#except ValueError:
+    #print("Error debe ingresar un numero valido")
+
+#🔎 Problemas detectados
+#En el rango elif n>=7: pusiste “excelente” otra vez, pero según el enunciado debería ser “buena”.
+
+#Falta la condición para “regular (≥6)”.
+
+#El mensaje de error tiene un detalle ortográfico: “Eror” → “Error”.
+
+#Tu primera condición if n>10: está bien para validar, pero también deberías validar si es menor que 0.
+
+
+#Forma corregida y mejorada
+
+#def calificaciones (n):
+    #if n<0 or n>10:
+        #return "La calificacion debe estar en el rango 0-10"
+    #elif n>=9:
+        #return f"La calificacion {n} es excelente"
+    #elif n>=7:
+        #return f"La calificacion {n} es buena"
+    #elif n>=6:
+        #return f"La calificacion {n} es regular"
+    #else:
+        #return f"La calificacion {n} es reprobada"
+
+#try:
+    #x=int(input("Ingrese calficaciones (0-10):"))
+    #print(calificaciones(x))
+#except ValueError:
+    #print("Error debes ingresar un numero valido")
+
+#Ventajas:
+#Corrige los rangos según el enunciado.
+
+#Valida tanto valores mayores a 10 como negativos.
+
+#Mensajes claros y consistentes.
+
+
+#🔎 Observación como profesor
+#En el #14 tu error fue de clasificación incorrecta (pusiste “excelente” dos veces y olvidaste “regular”).
+
+#En el #15 la lógica es más sencilla: solo necesitas el operador % para verificar si el número es divisible entre 2.
+
+#Consejo: cuando un enunciado pide rangos, escribe primero los rangos en papel y asegúrate de que no se solapen ni falte ninguno.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#15-Pide un número y muestra si es par o impar usando %
+
+#def par_impar(n): Creas una función que recibe un número n.
+    #if n%2 ==0: % devuelve el residuo de dividir n entre 2,Si el residuo es 0, significa que el número es divisible entre 2 → es par,Si el residuo no es 0, significa que es impar,if n % 2 == 0: → devuelve el mensaje de que es par,else: → devuelve el mensaje de que es impar,Usas return en lugar de print, lo cual es más profesional porque la función devuelve un resultado que luego puedes imprimir o usar en otro cálculo
+        #return f"El numero {n} es par "
+    #else:
+        #return f"El numero {n} es impar"
+
+#try: intenta convertir la entrada del usuario en un entero (int).,Si el usuario escribe algo que no es número, ocurre un error → except ValueError: captura ese error y muestra un mensaje claro,Finalmente, llamas a la función par_impar(x) y muestras el resultado
+    #x= int(input("Ingrese un numero: "))
+    #print (par_impar(x))
+#except ValueError:
+    #print("Error: debes ingresar un numero valido")
+
+
+#✅ Ventajas de este código
+#Usa el operador %, que es la forma más directa de comprobar paridad.
+
+#La función devuelve un valor con return, lo que la hace reutilizable.
+
+#Maneja errores de entrada con try/except.
+
+#Mensajes claros y fáciles de entender.
+
+#🔎 Observación como profesor
+#El código está correcto y completo.
+
+#Consejo: cada vez que uses %, piensa en “residuo de la división”. Esa es la clave para problemas de paridad, múltiplos y divisibilidad.
+
+#Consejo extra: podrías extender este mismo ejercicio para verificar también si el número es positivo, negativo o cero, junto con par/impar. Eso te daría práctica con condiciones múltiples.
+
+
+
+
+#NIVEL INTERMEDIO 
+
+
+#1- Calcula el promedio de 5 números ingresados por el usuario.prom=2
+#def promedio(n):
+    #"suma=0
+    #prom=0
+    #"for i in range(5):
+        #n=float(input(f"Ingresa el numero {i}: "))
+        #suma= suma+n
+        #prom= suma/5
+        #"if n==0:
+            #print("Cero detectado. Saliendo del bucle")
+            #break
+
+
+
+
+#try:
+    #x=print(f"La suma total fue: ")
+    #y=print("El promedio final fue: ")#esto no sirve de nada
+#promedio(x,y)
+#except ValueError:
+    #print("Error debes ingresar un numero valido")
+
+
+#🔎 Errores en tu código
+#Definición de la función
+
+#Estás pasando parámetros suma, prom, n pero luego los inicializas dentro de la función. No tiene sentido recibirlos como argumentos si los reinicias.
+
+#Uso de print en el try
+
+#Pusiste x = print(...) y y = print(...). Eso no sirve porque print no devuelve nada (None). Por eso luego tu llamada promedio(x,y) falla.
+
+#Promedio dentro del bucle
+
+#Estás calculando el promedio en cada iteración, pero lo correcto es calcularlo después de terminar el bucle.
+
+#Control de flujo con break
+
+#Si detectas un cero y sales del bucle, el promedio puede quedar mal calculado
+
+# Version corregida.......
+
+#def promedio():
+    #suma=0
+    #cantidad=5
+    #for i in range(1,cantidad+1):
+        #try:
+            #n=float(input(f"Ingresa el numero {i}: "))
+        #except ValueError:
+            #print("Error debes ingresar un numero valido")
+            #return
+        #if n==0:
+            #print("Cero detectado. Saliendo del bucle.")
+            #cantidad=i
+            #break
+        #suma+=n
+    #if cantidad>0:
+        #prom=suma/cantidad
+        #print(f"La suma total fue: {suma} ")
+        #print(f"El promedio final fue: {prom}")
+    #else:
+        #print("No se ingresaron numeros validos")
+
+#promedio()
+
+
+#🎯 Diferencias clave
+#La función ya no recibe parámetros innecesarios.
+
+#El promedio se calcula fuera del bucle, cuando ya tienes la suma.
+
+#Se maneja el caso de error con try/except dentro del bucle.
+
+#Si aparece un cero, se ajusta la cantidad de números realmente ingresados.
+
+
+#🎯 Observación como profesor
+#Tu idea estaba bien, solo que la implementación tenía errores de estructura.
+
+#El promedio debe calcularse fuera del bucle, no dentro.
+
+#No necesitas pasar parámetros a la función si los inicializas dentro.
+
+#Evita usar print como variable, porque devuelve None.
+
+#Con esta versión ya tienes el ejercicio funcionando exactamente como lo pensaste: 5 vueltas → suma total → promedio final.
+
+#2-Convierte grados Celsius a Fahrenheit y Kelvin.
+
+#Fórmula
+#0 °C + 273.15 = 273.15 K #Kelvin
+#(0 °C × 9/5) + 32 = 32 °F #Fahrenheit
+
+
+#try:
+    #c=float(input("Ingresa un numero en grados celsius : "))
+    #f=(c*1.8)+32
+    #k=c+273.15
+    #print(f"El resultado de la conversacion de {c} grados Celsius serian {f} grados Fahrenheit y {k} grados Kelvin")
+#except ValueError:
+    #print("Error debes ingresar un numero valido")
+
+
+
+#3-Calcula el área y perímetro de un rectángulo con valores ingresados.
+
+#Fórmulas Clave:
+#Área (A): BASE X ALTURA
+
+#Perímetro (P):  2X(BASE + ALTURA)
+
+#def medidas(base,altura):
+    #area=f"El area del rectangulo es: {base*altura}"
+    #perimetro=f"El perimetro de el rectangulo es: {2*(base+altura)}" 
+    
+    
+#try:
+        #x=float(input("Ingrese la base del rectangulo: "))
+        #y=float(input("Ingrese la altura del rectangulo: "))
+        #medidas(x,y)
+#except ValueError:
+        #print("Error debes de ingresar un valor valido")
+        
+
+
+#Problemas en tu código
+#int(area)=...
+
+#Esto es inválido en Python. No puedes declarar una variable con int(...) ni asignar así.
+
+#Lo correcto es simplemente:
+
+#"python
+#area = base * altura
+#La función no devuelve ni imprime nada
+
+#Dentro de medidas calculas area y perimetro, pero nunca los muestras ni los devuelves.
+
+#Por eso parece que “no hace nada”.
+
+#Entrada de datos
+
+#Cuando usas input(), siempre devuelve texto (string).
+
+#Convertir con float(input(...)) es correcto, pero si escribes letras o símbolos, te dará ValueError
+
+
+
+#Version mejorada
+
+
+#def medidas(base,altura):
+    #area= base*altura
+    #perimetro=2*(base*altura)
+    #print(f"El area del rectangulo es: {perimetro}")
+    #print(f"El perimetro del rectangulo es: {perimetro}")
+
+#try:
+    #x= float(input("Ingrese la base del rectangulo: "))
+    #y= float(input("Ingrese la altura del rectangulo: "))
+    
+    #medidas(x,y)
+#except ValueError:
+    #print("Error: debes ingresar un numero valido")
+
+
+#$Explicación
+#def medidas(base, altura): → defines una función que recibe dos parámetros: la base y la altura.
+
+#"Dentro calculas:
+
+#area = base * altura
+
+#perimetro = 2 * (base + altura)
+
+# Luego imprimes los resultados.
+
+#En el try/except, conviertes la entrada a float para que acepte decimales. Si el usuario escribe algo no numérico, se captura el error.
+
+#🎯 Observación como profesor
+#Tu idea era correcta: usar parámetros como “incógnitas” (base y altura) y que la función haga las operaciones. El error fue la sintaxis (int(area)=...) y no mostrar los resultados.
+
+#👉 Consejo: piensa en los parámetros como variables que la función necesita para trabajar. Tú se las das al llamar la función, y ella te devuelve o imprime el resultado.
+
+
+#4-Calcula el área y circunferencia de un círculo usando math.pi.
+
+
+
+
+
+
+
+
+
+
+
+
+
+#5-Calcula el interés simple de un préstamo.
+
+#6-Calcula el interés compuesto de un préstamo.
+
+#7-Convierte horas a minutos y segundos.
+
+#8-Calcula el salario neto después de impuestos (porcentaje fijo).
+
+#9-Calcula la velocidad (distancia/tiempo) y clasifícala como lenta, normal o rápida.
+
+#10-Calcula el promedio ponderado de tres notas con diferentes pesos.
+
+#11-Calcula el volumen de un cubo y de un cilindro.
+
+#12-Calcula el área de un triángulo usando la fórmula de Herón.
+
+#13-Calcula el porcentaje de hombres y mujeres en un grupo.
+
+#14-Calcula el descuento aplicado a un producto y el precio final.
+
+#15-Calcula el cambio que debe dar una caja registradora (desglose en billetes y monedas).
