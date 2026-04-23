@@ -1,0 +1,383 @@
+ # ESTE ES EL CÓDIGO DE EJERCICIOS RESULTOS POR MI MODULO UNO SECCION BASICA
+# CORRECTO (4 ESPACIOS ES EL ESTANDAR PROFESIONAL)
+
+#if 5>2:
+    #print("Cinco es mayor que dos ") # INDENTADO AUTOMATICA POR LA EXTENSION
+    #print("Esto tambien esta dentro de if ")
+
+#if 5>2:
+#print("Esto dara error ")
+
+"""
+Programa: Calculadora de IMC
+Descripción: Calcula el Índice de Masa Corporal a partir del peso y altura.
+Autor: [RODOLFO]
+Fecha: 2026-04-13
+"""
+#Enunciado: Pide al usuario peso (kg) y altura (m). Calcula el IMC (peso / altura**2) y muestra el resultado redondeado a dos decimales.
+# 1. SOLICITUD DE DATOS AL USUARIO
+# input() siempre devuelve un string. Debemos convertirlo a float para poder operar.
+
+#peso=float(input("Ingrese su peso (kg): "))
+#altura=float(input("Ingrese su altura (cm): "))
+
+#imc= (peso/altura**2)
+#print(f"Su peso (kg) es de: {peso} y su altura (cm) es de: {altura} entonces su indice de masa corporal (IMC) es: {imc}")
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Ejercicio HECHO POR MI #2: Intercambio de Variables (Nivel Profesional)
+
+#Enunciado: Dadas dos variables a = 5 y b = 10, intercambia sus valores sin usar una tercera variable temporal
+#a=5 
+#b=10
+#a+=5
+#b-=5
+
+#print(f"El valor de a es: {a} y el valor de b es: {b} ")
+
+
+# Ejercicio Resuelto por deep seek #2: Intercambio de Variables (Nivel Profesional)
+#Enunciado: Dadas dos variables a = 5 y b = 10, intercambia sus valores sin usar una tercera variable temporal.
+
+#Definimos las variables iniciales 
+
+#primer_valor=5
+#segundo_valor=10
+
+
+#print(f"Antes del intercambio: a= {primer_valor} , b={segundo_valor}")
+
+#METODO PITONICO (El que usan los profesionales)
+#Esto se llama "desempaquetado de tuplas" (Tuple Unpacking)
+
+# Python evalua el lado derecho primero (Crea una tupla temporal (10,5))
+
+# y luego asigna los valores alas variables de la izquierda en orden
+#Esta es la forma correcta 
+
+#primer_valor,segundo_valor=segundo_valor,primer_valor
+
+#print(f"Despues del intercambio: a = {primer_valor} , b= {segundo_valor} ")
+
+# --- Explicación adicional para principiantes ---
+# Si no conocieras el truco de Python, el método tradicional en otros lenguajes sería:
+# temp = a
+# a = b
+# b = temp
+# Python te permite hacerlo en una sola línea elegante.
+
+#Ejercicios Propuestos (15 en total, divididos por dificultad
+
+#Crea una variable nombre con tu nombre y edad con tu edad. Imprime: "Me llamo [nombre] y tengo [edad] años".
+
+
+#def descripcion(nombre,edad):
+    #print("Me llamo rodolfo y tengo 18 años de edad")
+
+
+#descripcion(edad=int(18),nombre=str("Luis rodolfo"))
+
+#Solicita dos números al usuario, súmalos y muestra el resultado.
+
+#n1= int(input("Ingrese el primer numero: "))
+
+#n2=int(input("Ingrese el primer numero: "))
+
+#print(f"La suma de : {n1} + {n2} es: {n1+n2}")
+
+
+
+
+#Calcula el área de un círculo. Pide el radio y usa pi = 3.1416. area = pi * radio ** 2.
+
+
+#def ac(r,pi):
+    #radio=print(f"El pi es igual: {pi*r**2} ")
+    #return
+
+#try:
+    #x=float(input("Ingrese el radio del circulo: "))
+    #y=float(input("Ingrese el pi del circulo: "))
+    #ac(x,y)
+#except ValueError:
+    #print("Error debes de ingresar valores validos")
+
+
+#Pide un número y muestra su doble y su triple.
+
+#def escala(n):
+    #print( f"El doble de {n} es: {n**2} y el tiple de {n} es: {n**3}")
+#try:
+    #x=int(input("Ingresa el numero : "))
+    #escala(x)
+#except ValueError:
+    #print("Error debe de ingresar un numero valido")
+
+
+#Concatena dos cadenas de texto ingresadas por el usuario.
+
+#input1=str(input("1:"))
+#input2=str(input(" 2:"))
+#conca= input1
+#conca+= input2
+
+#try:
+    #print(f"El primer dialogo es: {input1} y el segundo {input2} concadenados: {conca}")
+#except ValueError:
+    #print("Error numero valido")
+
+
+
+
+
+
+
+
+
+
+
+
+
+#🟡 Medio (Lógica)
+#Calculadora de propinas: Pide el total de la cuenta y el porcentaje de propina deseado. Muestra el total a pagar (cuenta + propina).
+#try:
+    #total=int(input("Ingrese el total de la cuenta: "))
+    #pr=int(input("Ingrese el porcentaje de propina:"))
+    #"propina=pr/100*total
+    #pf=print(f"El total de la cuenta sin propina es: {total} y el porcentaje de propina convertido a decimal  es: {propina} al final a pagar en total serian: {total+propina}")
+#except ValueError:
+    #print("Error ingrese un numero valido")
+
+
+
+#Conversor de temperaturas: Pide grados Celsius y conviértelos a Fahrenheit (F = C * 9/5 + 32).
+
+#def conversor(c):
+    #f= c*9/5+32
+    #return f"El valor en grados celsius es de: {c} pero en grados Fahrenheit {f} "
+
+#try:
+    #x=int(input("Ingrese el numero en grados celsius: "))
+    #print(conversor(x))
+#except ValueError:
+    #print("Error debes de ingresar un numero valido ")
+
+
+
+#Cálculo de interés simple: Pide capital inicial, tasa de interés anual (%) y número de años. Calcula el monto final (capital * (1 + tasa/100 * años)).
+
+#def intereses(capital,tasa,años):
+    #monto_final=f"El total a pagar es {capital(*1+(tasa/100)*años)}" # Aqui corregi el error "monto_final=f"El total a pagar es {capital*1+tasa/100*años}"
+    #return monto_final
+
+#try:
+    #x=float(input("Ingrese la capital inicial:"))
+    #y=float(input("Ingrese la tasa de anualidad:"))
+    #z=int(input("Ingrese el numero de años:"))
+    #print(intereses(x,y,z))
+#except ValueError:
+    #print("Error debes ingresar un numero valido")
+
+
+#Explicación
+#capital * (1 + (tasa/100) * años) → ahora sí aplica la fórmula correcta del interés simple.
+
+#Uso float para capital y tasa, porque pueden tener decimales.
+
+#Uso int para años, porque normalmente es un número entero.
+
+#La función devuelve un string con el resultado.
+
+
+#Version mejorada con buenas practicas 
+
+#from typing import Union
+
+# def calcular_interes_simple(capital:Union[int,float],tasa: Union[int,float],años:int) -> float:
+#     """
+#     Calcula el monto final con interes simple.
+    
+#     Formula:
+#     monto_final=capital*(1+(tasa/100)*años)
+    
+    
+#     Args:
+#         capital(float): Capital inicial
+#         tasa (float): Tasa de interes anual en porcentaje.
+#         años(int): Numero de años
+#     Returns:
+#         float: Monto final despues de aplicar interes simple
+#     """
+#     if capital <0 or tasa<0 or años <0:
+#         raise ValueError("Los valores deben ser positivos ")
+#     return capital *(1+(tasa/100)*años)
+
+
+# def main() ->None:
+#     """Funcion principal que solicita datos al usuario y muestra el resultado."""
+#     try:
+#         capital=float(input("Ingrese el capital inicial: "))
+#         tasa= float(input("Ingrese la tasa de interes anual (%)"))
+#         años=int(input("Ingrese el numero de años:"))
+#         monto= calcular_interes_simple(capital,tasa,años)
+#         print(f"El total a pagar es: {monto:.2f}") #Formato con 2 decimales
+#     except ValueError as e:
+#         print(f"Error: {e}")
+
+# if __name__ == "__main__":
+#     main()
+
+
+
+#Inversor de números de 2 cifras: Pide un número entero de dos dígitos (ej. 47) e imprime el número con los dígitos invertidos (ej. 74). Pista: usa división entera // y módulo %.
+
+
+
+#def invertir(numero):
+    #unidades=numero%10
+    #decenas=numero//10
+    #cambio=(unidades*10)+decenas
+    
+    #return f"El numero al reves es: {cambio}"
+
+
+#try:
+    #x=int(input("Ingresa un numero entero con dos digitos: "))
+    #print(invertir(x))
+#except ValueError:
+    #print("Error debes ingresar un numero valido")
+
+
+
+
+#Distancia entre dos puntos: Pide coordenadas x1,y1 y x2,y2. Calcula la distancia euclidiana: distancia = ((x2-x1)**2 + (y2-y1)**2)**0.5.
+#def distacia(x1,y1,x2,y2):
+    #distacia=((x2-x1)**2 + (y2-y1)**2)**0.5
+    #return f"La distancia entre dos puntos de coordenadas: {distacia}"
+
+#try:
+    #x=int(input("Ingresa el valor de x1: "))
+    #y=int(input("Ingresa el valor de y1:"))
+    #z=int(input("Ingresa el valor de x2:"))
+    #v=int(input("Ingresa el valor de y2:"))
+    #print(distacia(x,y,z,v))
+#except ValueError:
+    #print("Error debes ingresar un valor valido")
+
+
+
+#🔴 Avanzado (Integración)
+#Juego de adivinanza (setup): Genera un número aleatorio entre 1 y 10 usando random.randint(1,10). Pide al usuario que adivine y dile si acertó o no (sin bucles aún, solo un intento). Necesitarás import random al inicio.
+
+#import random
+#def adivinanza(adivine):
+    #numero=random.randint(1,10)
+    #if adivine==numero:
+        #print("Adivinaste")
+    #else:
+        #print("Equivocado ")
+    #return numero,adivine
+
+
+
+#try:
+    #x=int(input("Ingrese un numero "))
+    #adivinanza(x)
+#except ValueError:
+    #print("Error debes ingresar un numero valido")
+
+
+
+
+#Formateo de tiempo: Pide una cantidad de segundos y conviértela a formato horas:minutos:segundos. (Ej: 3665 segundos -> 1:1:5).
+#def cambiodeformato(sg):
+    #horas,resto=divmod(sg,3600)
+    #minutos,segs=divmod(resto,60)
+    #return print(f"{int(horas):02}:{int(minutos):02}:{int(segs):02} ")
+
+#try:
+    #x=int(input("Ingrese la cantidad en segundos: "))
+    #cambiodeformato(x)
+#except ValueError:
+    #print("Ingrese un valor valido para el numero")
+
+
+
+
+
+
+#Validador de tipo de dato: Pide un dato al usuario. Intenta convertirlo a int. Si falla, intenta a float. Si falla, asume que es str. Muestra "Es entero", "Es decimal" o "Es texto". Pista: usa bloques try/except anidados (nos adelantamos un poco).
+#def validor(dato):
+    #try:
+        #if dato!=int(dato):
+            #print(f"Es entero")
+        #else:
+            #return print
+        #try:
+            #if dato!=float(dato):
+                #print(f"Es decimal")
+            #else:
+                #return print
+        #except ValueError:
+            
+                #print("Error debes ingresar un numero valido")
+        #finally:
+            
+                #print("Es texto")
+    #except ValueError:
+        #print("error")
+    #return dato
+
+#x=input("ingresa el dato: ")
+#validor(x)
+
+
+
+
+###Calculadora de pintura: Pide el ancho y alto de una pared en metros. Sabiendo que 1 litro de pintura cubre 10 metros cuadrados, calcula cuántos litros de pintura se necesitan.
+
+#$def calculadora_pintura(ancho,alto):
+    #pintura= (ancho*alto)/10 # ESTA OPERACION LA BUSQUE CON LA IA 
+    #print(f"Se necesitan {pintura} litros para cubrir una pared de ancho: {ancho} y alto {alto} ")
+
+
+
+#"try:
+    #x=float(input("Ingresa el ancho de una pared en cm: "))
+    #y=float(input("Ingresa el alto de una pared en cm:"))
+    #c#alculadora_pintura(x,y)
+#except ValueError:
+    #print("Debes ingresar valores validos: ")
+
+#Mini-factura: Pide nombre del producto, precio unitario y cantidad. Calcula subtotal, IVA (16% por ejemplo) y total. Muestra un ticket formateado con print y caracteres de tabulación \t.
+
+#def mini_factura(nombre,preciou,cantidad,iva):
+    #subtotal= cantidad*preciou
+    #iva= subtotal*(iva/100)
+    #total= subtotal+iva
+    #linea="{:<10} {:>10}"
+    #print(linea.format(f"{nombre},{cantidad}"))
+    #print(linea.format("------","------"))
+#     print(linea.format(f"{iva},{preciou},{subtotal},"))
+#     print(linea.format("------","------"))
+#     print(linea.format(f"{total}"))
+# try:
+#     x=str(input("Ingresa el nombre del producto: "))
+#     y=float(input("Ingresa el valor del producto: "))
+#     z=int(input("Ingresa la cantidad de productos que deseas comprar: "))
+#     x=int(input("Ingrese la porcentaje del iva"))
+#     mini_factura
+
+except ValueError:
+    print("Error debes ingresar un valor valido")
